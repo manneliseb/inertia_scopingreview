@@ -130,18 +130,23 @@ ScopingReview <- ScopingReview %>%
 
 # Creating a dataframe with just unique articles (without extra studies)
 ScopingReview_unique <- ScopingReview %>%
-  distinct(Title, .keep_all = TRUE)
+  distinct(Title, .keep_all = TRUE) %>%
+  # Adding a short ID tag for each article
+  mutate(
+    ArticleID = paste0("A", row_number()),
+    Present = 1
+  )
 
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # 3) Descriptives ----------------------------------------------------------
 
 # USE TERM INERTIA
-ScopingReview %>%
+ScopingReview_unique %>%
   count(Term_Inertia) # 8 no, 22 yes
 
 
-ScopingReview_InertiaTerm <- ScopingReview %>%
+ScopingReview_InertiaTerm <- ScopingReview_unique %>%
   separate_rows(Definition_ComponentsUnique, sep = ";") %>%
   group_by(Term_Inertia, Definition_ComponentsUnique) %>%
   summarise(n = n(), .groups = "drop") %>%
@@ -152,11 +157,11 @@ ScopingReview_InertiaTerm <- ScopingReview %>%
   mutate(prop = n / sum(n))
 
 # WITHIN-PERSON CHANGE
-ScopingReview %>%
+ScopingReview_unique %>%
   count(WithinPersonChange_YN) # 24 no, 6 yes
 
 # Proportion that found evidence
-ScopingReview %>%
+ScopingReview_unique %>%
   filter(WithinPersonChange_YN == "Yes") %>%
   count(WithinPersonChange_Evidence) %>%
   mutate(prop = n / sum(n))
@@ -196,18 +201,18 @@ code_colors_wpchange <- c(
   "Not applicable" = "#555555" # grey
 )
 
-postscript(
-  file = here::here("figures", "WithinPersonChange.eps"),
-  width = 8,
-  height = 6
-)
-jpeg(
-  file = here::here("figures", "WithinPersonChange.jpg"),
-  width = 8,
-  height = 6,
-  units = "in",
-  res = 300
-)
+# postscript(
+#   file = here::here("figures", "WithinPersonChange.eps"),
+#   width = 8,
+#   height = 6
+# )
+# jpeg(
+#   file = here::here("figures", "WithinPersonChange.jpg"),
+#   width = 8,
+#   height = 6,
+#   units = "in",
+#   res = 300
+# )
 
 ScopingReview_unique %>%
   mutate(
@@ -239,4 +244,156 @@ ScopingReview_unique %>%
   )
 
 
-dev.off()
+# dev.off()
+
+# Plot that looks at definition components
+
+# First getting data in long format
+
+defs_long <- ScopingReview_unique %>%
+  filter(
+    ClearDefinition != "No"
+  ) %>%
+  # split on the semi-colon
+  separate_rows(Definition_ComponentsUnique, sep = "\\s*;\\s*") %>%
+  mutate(
+    Definition_ComponentsUnique = str_trim(Definition_ComponentsUnique)
+  ) %>%
+  # Removing any NAs (sometimes have ___; and leads to NAs)
+  filter(Definition_ComponentsUnique != "") %>%
+  # Trim AR component
+  mutate(
+    Definition_ComponentsUnique = case_when(
+      Definition_ComponentsUnique ==
+        "Autocorrelations/autoregressive model (if the authors specifically define inertia as the statistical model)" ~ "Autoregression",
+      Definition_ComponentsUnique == "stuck" ~ "Sticky/stuck",
+      .default = Definition_ComponentsUnique
+    )
+  ) %>%
+  # Remove extra "Sticky" component (now redundant, was from same component as "stuck")
+  filter(Definition_ComponentsUnique != "“Sticky”")
+
+# Plotting
+# SIDE-BY-SIDE BARS (Inertia term vs not) (N>1)
+defs_long %>%
+  count(Term_Inertia, Definition_ComponentsUnique) %>%
+  # Get percent; want to graph that?? - MAB (rn not included)
+  # mutate(
+  #   pct = 100 * n / sum(n)
+  # )
+  # only include if MORE than 1 definition component
+  filter(n > 1) %>%
+  ggplot(aes(
+    x = reorder(Definition_ComponentsUnique, n),
+    y = n,
+    fill = Term_Inertia
+  )) +
+  geom_col(position = "dodge") +
+  coord_flip() +
+  labs(
+    x = "Definition component",
+    y = "Number of articles"
+  ) +
+  theme_minimal()
+
+# STACKED BARS - OVERALL DEFINITION COMPONENTS (N>1)
+defs_long %>%
+  count(Term_Inertia, Definition_ComponentsUnique) %>%
+  filter(n > 1) %>%
+  ggplot(
+    aes(
+      x = reorder(Definition_ComponentsUnique, n),
+      y = n,
+      fill = Term_Inertia
+    )
+  ) +
+  geom_col() +
+  coord_flip() +
+  labs(
+    x = "Definition component",
+    y = "Number of articles"
+  ) +
+  theme_minimal()
+
+
+# IF WANT FACET WRAP !
+defs_long %>%
+  count(Term_Inertia, Definition_ComponentsUnique) %>%
+  filter(n > 1) %>%
+  ggplot(
+    aes(
+      x = reorder(Definition_ComponentsUnique, n),
+      y = n
+    )
+  ) +
+  geom_col(fill = "#0072B2") +
+  coord_flip() +
+  facet_wrap(~Term_Inertia) +
+  labs(
+    x = "Definition component",
+    y = "Number of articles"
+  ) +
+  theme_minimal()
+
+
+# LOOKING PER ARTICLE
+
+# Getting binary presence vs absence of specific definition components
+defs_article <- defs_long %>%
+  add_count(Definition_ComponentsUnique) %>%
+  filter(n > 1) %>%
+  # removing when just single definition components for now
+  distinct(Title, Definition_ComponentsUnique) %>%
+  mutate(Present = 1) %>%
+  # Making code for articles
+  mutate(
+    ArticleID = paste0("A", row_number()),
+    Present = 1
+  )
+
+
+ggplot(
+  defs_article,
+  aes(
+    x = Definition_ComponentsUnique,
+    y = forcats::fct_rev(ArticleID),
+    fill = factor(Present)
+  )
+) +
+  geom_tile(color = "white") +
+  scale_fill_manual(
+    values = c("1" = "#0072B2"),
+    guide = "none"
+  ) +
+  labs(
+    x = "Definition component",
+    y = "Article"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.y = element_text(size = 6),
+    axis.text.x = element_text(
+      angle = 45,
+      hjust = 1
+    )
+  )
+# MAB - maybe useful to include above for final version, BUT only if remove lots of n=1 versions...
+
+# Other way to look at combinations:
+library(ComplexUpset)
+
+# Convert back to wide format
+
+defs_wide <- defs_article %>%
+  mutate(value = 1) %>%
+  pivot_wider(
+    names_from = Definition_ComponentsUnique,
+    values_from = value,
+    values_fill = 0
+  )
+
+
+upset(
+  defs_wide,
+  intersect = names(defs_wide)[-1]
+)
