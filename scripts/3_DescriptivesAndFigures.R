@@ -2462,7 +2462,7 @@ constructs_comp <- (p_constructs |
   plot_layout(heights = c(1, .04))
 
 ggsave(
-  here::here("figures", "Fig5_constructs_comp.jpg"),
+  here::here("figures", "fig5_constructs_comp.jpg"),
   constructs_comp,
   width = 10,
   height = 4.5,
@@ -2558,7 +2558,7 @@ ggsave(
 
 # Model comparison
 ggsave(
-  here::here("figures", "supplementary", "fig_s15_modelcomparison.jpg"),
+  here::here("figures", "supplementary", "fig_s14_modelcomparison.jpg"),
   # to make slightly thinner bar
   p_modelcomp + plot_layout(heights = .5),
   width = 8,
@@ -2590,7 +2590,7 @@ ggsave(
 
 ## DEFINITION relevant section -------------------------------------------------
 ggsave(
-  here::here("figures", "supplementary", "fig_s10_term_peryear.jpg"),
+  here::here("figures", "supplementary", "fig_s9_term_peryear.jpg"),
   p_term_peryear,
   width = 8,
   height = 6,
@@ -2613,7 +2613,7 @@ p_recovery_comp <- p_recovery_yn /
   plot_layout(heights = c(.5, .5, 7))
 
 ggsave(
-  here::here("figures", "supplementary", "fig_s13_recovery_composite.jpg"),
+  here::here("figures", "supplementary", "fig_s12_recovery_composite.jpg"),
   p_recovery_comp,
   width = 11,
   height = 8,
@@ -2625,7 +2625,7 @@ ggsave(
   here::here(
     "figures",
     "supplementary",
-    "fig_s11_definitioncomponents_firstappearance.jpg"
+    "fig_s10_definitioncomponents_firstappearance.jpg"
   ),
   p_def_firstappears,
   width = 8,
@@ -2635,7 +2635,7 @@ ggsave(
 
 # Definition components co-occurrences
 ggsave(
-  here::here("figures", "supplementary", "fig_s12a_defcom_cooccurrences.jpg"),
+  here::here("figures", "supplementary", "fig_s11a_defcom_cooccurrences.jpg"),
   defcomp_cooc,
   width = 10,
   height = 8,
@@ -2644,7 +2644,7 @@ ggsave(
 
 # Definition components appearing alone & overall prevalence
 ggsave(
-  here::here("figures", "supplementary", "gif_s12b_defcom_single.jpg"),
+  here::here("figures", "supplementary", "fig_s11b_defcom_single.jpg"),
   defcomp_occur,
   width = 10,
   height = 5,
@@ -2696,7 +2696,7 @@ ggsave(
   here::here(
     "figures",
     "supplementary",
-    "fig_s17_component_bystatmodel_context.jpg"
+    "fig_s16_component_bystatmodel_context.jpg"
   ),
   p_context,
   width = 9,
@@ -2709,7 +2709,7 @@ ggsave(
   here::here(
     "figures",
     "supplementary",
-    "fig_s18_component_bystatmodel_winpersonchange.jpg"
+    "fig_s17_component_bystatmodel_winpersonchange.jpg"
   ),
   p_winchangedef,
   width = 8,
@@ -2727,7 +2727,7 @@ p_statsdetails <- p_inddiffs_byar /
   theme(legend.justification = "left")
 
 ggsave(
-  here::here("figures", "supplementary", "gif_s16_statsdetails.jpg"),
+  here::here("figures", "supplementary", "fig_s15_statsdetails.jpg"),
   p_statsdetails,
   width = 10.5,
   height = 8,
