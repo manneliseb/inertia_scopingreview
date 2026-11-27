@@ -1044,16 +1044,7 @@ ScopingReview_forR <- ScopingReview_forR %>%
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Saving data ----------------------
 
-# Data for figures
-readr::write_csv(
-  ScopingReview,
-  here::here("data", "processed", "ScopingReview_Alldata_processed.csv")
-)
-
-readr::write_rds(
-  ScopingReview,
-  here::here("data", "processed", "ScopingReview_Alldata_processed.RDS")
-)
+# Data for figures (shared)
 
 readr::write_csv(
   ScopingReview_forR,
@@ -1065,6 +1056,7 @@ readr::write_rds(
   here::here("data", "processed", "ScopingReview_forR.RDS")
 )
 
+# Data to share (for Airtable etc)
 readr::write_csv(
   ScopingReview_toShare,
   here::here("data", "processed", "ScopingReview_toShare.csv")
@@ -1098,4 +1090,15 @@ readr::write_rds(
 # readr::write_csv(
 #   ScopingReview %>% select(Authors, Title, Constructs, Term_Other),
 #   here::here("data", "processed", "ScopingReview_constructinfo.csv")
+# )
+
+# Full data including for later projects
+# readr::write_csv(
+#   ScopingReview,
+#   here::here("data", "processed", "ScopingReview_Alldata_processed.csv")
+# )
+
+# readr::write_rds(
+#   ScopingReview,
+#   here::here("data", "processed", "ScopingReview_Alldata_processed.RDS")
 # )
