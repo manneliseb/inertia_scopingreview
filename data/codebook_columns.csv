@@ -1,0 +1,132 @@
+﻿"varNames","fullItems"
+"Id","Id"
+"Authors","Authors
+(as written in the reference)"
+"Title","Title"
+"Journal","Journal"
+"Reference","Full reference (APA 7 - include the DOI!)"
+"SourceLocation","First author affiliation
+Please enter this information in the following format: University, Country (no departments, etc.)
+If two first authors or an author with two affiliations: put the first one li"
+"Year","What year was the study published in?"
+"Term_Inertia","Do the authors use the term inertia?"
+"Term_Other","If not, what term do they use? 
+(If a specific term is not used, write the phrase or multiple terms they use)
+"
+"ClearDefinition","Do the authors provide a clear definition for inertia / the autoregressive component / a similar concept?"
+"Definition_Type","What type of definition ? 
+(Note that if the authors discuss an operationalization, that is different than a statistical definition)"
+"Definition_FirstAppears","Where does the definition first appear?"
+"Definition_NewInfoAppears","In which sections does new definition information appear?"
+"Definition_ExactPhrase","What is the exact phrase they use as definition (including if they discuss what this definition implies in the next few sentences): 
+If the authors indicate further interpretation/aspects of definitio"
+"Definition_Components","Which of the following aspects does the definition reported above explicitly include (check as many as relevant):"
+"Definition_ComponentsUnique","[More specific options of inertia definitions]"
+"Constructs","For which construct(s) did the authors examine inertia (or a parallel concept)? 
+Separate the constructs by a comma (e.g., “Positive affect, negative affect, social context”)
+"
+"OperationalizeRecovery_YN","Do the authors explicitly discuss in the text how they operationalize the recovery portion of inertia ? 
+(e.g., return to mean level; return to prior state; return to zero) "
+"OperationalizeRecovery_How","How do they discuss the recovery portion of inertia?"
+"OperationalizeRecovery_How_ExactPhrase","If yes, how do they operationalize recovery ? "
+"StudyTopic","What is the topic of the study?"
+"NParticipants","How many participants were included in the analysis? 
+Integer or “Not reported”. If there are multiple main analyses relating to inertia, and the number of participants included differ between analyse"
+"SamplingDesign_Clear","Was the type of sampling design reported clearly?"
+"SamplingDesign_Type","What kind of sampling design was used?"
+"AverageTimeInterval_Reported","Do the authors report the (average) time interval between ESM prompts (or ESM responses, in the case of event-based design)?"
+"AverageTimeInterval_Hours","Average time interval between ESM prompts (not counting nights):  
+Report a number in hours. "
+"SamplingDesign_ExactPhrase","Give a brief description of the sampling design
+Include the page number where this information can be found.
+"
+"StudyDuration_Days","ESM study duration ? 
+Number of days (integer) if reported; or copy/paste their description (if in weeks/months) or “Not reported”
+Can also indicate range if relevant (e.g., x-x days)
+"
+"ESMPrompts_perDay","Number of measurements per day per participant:
+Integer or “Not reported” or N/A
+"
+"AverageNAnsweredESM_Reported","Do the authors clearly specify the average number of ESM prompts answered per person?
+"
+"AverageNAnsweredESM","What is the average number of ESM prompts answered per person? "
+"RemovedDataPoints_CarelessResponding_YN","Do the authors specify if this number was reduced because they removed data points due to careless responding or poor data quality?"
+"RemovedDataPoints_CarelessResponding_How","If yes, how did the authors identify these data points as being due to careless responding or of poor quality? "
+"ResponseScales","Which response scale(s) was/were used in the ESM questionnaire?
+(Specifically for the construct of interest used to examine inertia)"
+"Distribution_Discussed","Do the authors explicitly discuss the distribution of the variables?
+(other than just indicating the mean & SD of variables)
+"
+"Distribution_Exact","Do the authors mention if the distribution of the variable (for which they examine inertia) is: 
+(If multiple variables: select other & write in for other variables)"
+"variable_Mean","What is the MEAN for the variable(s) of interest (i.e., for which they examine inertia)?  
+Integer or “Not reported”; if multiple variables of interest, separate via ;"
+"variable_SD","What is the SD for the variable(s) of interest (i.e., for which they examine inertia)?  
+Integer or “Not reported”; if multiple variables of interest, separate via ;"
+"variable_Range","What is the total possible range (e.g., scale min & max for the variable(s) of interest (i.e., for which they examine inertia)?  
+Integer-Integer or “Not reported”; if multiple variables of interest,"
+"Preregistration","Was the study registered before data analysis?
+If timing is not clear from the text, can look at preregistration for this information
+"
+"Prereg_workingLink","Is a working link to the registration provided?"
+"DataShared","To what degree is the data available?"
+"CodeShared","Do the authors report that the code used to produce the results is publicly available?"
+"WithinPersonChange_YN","Do the authors model within-person change in inertia?"
+"WithinPersonChange_Correlate","If yes, what is within-person change linked with ?
+(Based on how they investigate the data, not necessarily based on the results)
+"
+"WithinPersonChange_HowModeled","How do the authors model within-person change in inertia?"
+"WithinPersonChange_Moderator_Step","Was this moderator investigated"
+"WithinPersonChange_Moderator_Form","What form did the moderator take?"
+"WithinPersonChange_Moderator_ExactInfo","Give further information about how they measured this moderator (briefly e.g., what exactly the authors measured):
+Also indicate the page number "
+"WithinPersonChange_Moderator_Type","Is this moderator variable:"
+"WithinPersonChange_Moderator_Distribution_YN","Do the authors give any information about the distribution of this moderator variable:"
+"WithinPersonChange_Moderator_Distribution_What","If yes, do they discuss this moderator variable as:"
+"WithinPersonChange_Moderator_BetweenReliability_Discussed","Do the authors (empirically) discuss the between-person reliability of this moderator variable?              "
+"WithinPersonChange_Moderator_BetweenReliability_How","If yes, write a few words about how they did so (e.g., either in the study design or the analysis):"
+"WithinPersonChange_Moderator_WithinReliability_Discussed","Do the authors (empirically) discuss the within-person reliability of this moderator variable?              "
+"WithinPersonChange_Moderator_WithinReliability_How","If yes, write a few words about how they did so (e.g., either in the study design or the analysis): 1"
+"WithinPersonChange_StatisticalModel","What type of statistical model or method did the authors use to examine within-person change (without a moderator)? "
+"WithinPersonChange_Evidence","Do the results provide evidence for within-person change in inertia? "
+"WithinPersonChange_Evidence_LinkedWithModerator","Do results suggest that this within-person change is linked with a moderator ?"
+"WithinPersonChange_Evidence_Moderator_Which","Which moderator?"
+"StatisticalModelFamily","What is the model type? (Check all that apply):"
+"IndividualDifferencesHandled","How do the authors handle individual differences?"
+"CenterPredictors","If the authors use multilevel techniques, do they center predictors?
+If not explicitly mentioned, answer as ""Not clearly mentioned"""
+"CenterPredictors_How","How do they center predictors (copy/paste):"
+"EstimationTechnique","Which estimation technique was used?"
+"ModelComparison","Do the authors compare multiple statistical models?
+(e.g., as in model comparison and selection; if unclear, select ""Other"" and write reason why unclear)"
+"ModelComparison_HowChosen","How did the authors choose the final model?
+(Write a brief summary)"
+"ModelComparison_DiffImpliedDefinitions","Do the different models imply different definitions of inertia?
+ (e.g., one implied a trait-like characteristic, the other implied within-person change; if unclear, select ""Other"" and add information"
+"ModelComparison_ImpliedDefinitions","What were the different definitions implied by each model?"
+"StatisticalAnalyses_OtherNotes","Any other notes or further specifications about model type? "
+"ExactItems_Specified","Do the authors specify the exact text of the items used to measure the variable of interest for inertia?
+
+"
+"ExactItems","What are the items? 
+(Write the exact items, as well as a scale name & reference if that is given; if inertia is examined for multiple variables, write the items used for all variables) "
+"Items_Justified_YN","Do the authors justify their choice of items?"
+"Items_Justified_How","How do the authors justify the selection of items? (Copy/paste the exact phrasing) "
+"Scores_Calculated_How","How do the authors calculate a score for each variable of interest for inertia?"
+"Scores_Pooled_How","How do authors pool items? 
+(Put N/A if not applicable)
+This can be general information about how they aggregated/pool items
+"
+"Scores_Calculated_Justified","Do the authors justify their method of calculating a score for each variable ? "
+"Scores_Calculated_Justified_How","What is their justification? (Copy/paste)"
+"Reliability_WithinPerson_YN","Is the within-person reliability of this scale discussed (empirically) for this specific sample?"
+"Reliability_WithinPerson_Method","If yes, with which method? 
+(Note: This categorization & these references are adapted from Brose et al. 2020)"
+"Reliability_WithinPerson","What is the reported within-person reliability?"
+"Reliability_BetweenPerson","What is the reported between-person reliability (if also mentioned; if not put /)? "
+"InertiaEstimate_Indicated","Do they clearly indicate the inertia estimate(s)? "
+"InertiaEstimate","What are the inertia estimates ? (If multiple, separate with a ,)"
+"Inertia_Correlate_YN","Did the authors examine the association between inertia and a trait variable (e.g., depression)?"
+"Inertia_Correlate_Which","Which trait variable was inertia investigated alongside inertia ? (e.g., depression)"
+"GeneralNotes","Any other general notes? "
+"Uncertainties","If unsure about any specific question(s) and want to review with group, write here the specific question (by question title) & brief reason for uncertainty, with separate questions on new lines:"

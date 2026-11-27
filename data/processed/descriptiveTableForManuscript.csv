@@ -1,0 +1,6 @@
+Variable,Mean,Median,SD,Range,N
+AverageNAnsweredESM,64.05,38.2,94.31,6.4 - 545,84
+AverageTimeInterval_Hours,8.21,2.89,9.95,0.17 - 24,65
+ESMPrompts_perDay,5.78,5,5.59,1 - 52,102
+NParticipants,218.66,141.5,235.45,4 - 1640,104
+StudyDuration_Days,24.28,13.9,36.5,1 - 196,105

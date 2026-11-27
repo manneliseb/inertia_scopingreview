@@ -1,0 +1,234 @@
+﻿Title,Authors,GeneralNotes_LP,Uncertainties_LP,GeneralNotes,Uncertainties
+Associations between inertia of negative emotions and diurnal cortisol in a sample of college students.,"Alessandri, G., De Longis, E., & Doane, L. D.",NA,"How many participants were included in the analysis? 
+
+Unclear to me if the 76 participants are the ones included in the analysis or if participants were still removed from that sample for non-compliance (“Analyses were conducted only on those participants who were compliant (see procedure section for full compliance description) with the saliva sampling.” Page 2)
+","Distribution : Authors note the distribution of cortisol values were skewed, but don’t explicitly mention anything for NE
+
+Correlate as salivary cortisol: From statistical model given at top of page 4, unsure if cortisol is a repeated (momentary) variable per person, because it has the subscript ti, but in the prior equation on page 3, j indexes time of assessment, not t (but in that equation, t is also included & not explained). From the explanations of the cortisol indices, it also seems like there should be at least several CAR values (30 min after waking) for each participant, but maybe one AUCg (average cortisol level), but I’m not 100% sure…",NA
+Affect dynamics in adolescent depression: Are all equilibria worth returning to?,"Fisher, H., Fatimah, H., Pidvirny, K., Brown, H., Balkind, E., Pastro, B., & Webb, C. A.",NA,"Do the authors use the term inertia? Yes, but only in the discussion and not to refer to the concept of affective return to equilibrium that they’re actually studying
+
+How many participants were included in the analysis? They reported that the number ranged between 52 and 63 for specific emotions, but not the exact number for all analyses. Not sure if that counts as “not reported”
+
+To what degree is the data available? They say that the data is available in the NIMH Data Archive but don’t provide a link. I have indeed found the project there, but it seems like data from only a few participants is available for now. Either way, not publicly available I guess.  
+
+How do the authors handle individual differences? They don’t necessarily “cluster” but they do model each individual and then use those estimates in further analyses. 
+","Authors explicitly compare the other parameter they look at (frequency or “spring”) to inertia, stating: “A weak spring parameter reflects a lack of elasticity in an affective system as the spring moves sluggishly after getting perturbed and potentially becoming stuck in a displaced position - similar to the concept of emotional inertia or rigidity” (page 13). However, the working definition we arrived at for parallel concepts to inertia was : a “lingering trajectory of a mental state after it arises, signaling a long-lasting deviation from baseline over time for one construct.” This is reflected in damping, which is described as “indicating how effectively an individual can return to a balanced affective state after experiencing a negative event.“ (page 5)
+
+Note for sample size: Although data from 115 participants were included in the analyses, the damped oscillator models only converged for 52-63 of these (depending on the modeled emotion)","Alternate concept to inertia: A bit difficult to decide whether it’s spring, damping, or both. I went with damping in the end, as the authors state this is the “rate of change” (while spring/frequency is the “position of the latent state at time t”
+
+Complicated for me by how the authors discuss spring/frequency in the discussion: “A weak spring parameter reflects a lack of elasticity in an affective system as the spring moves sluggishly after getting perturbed and potentially becoming stuck in a displaced position - similar to the concept of emotional inertia or rigidity” ([Fisher et al., 2025, p. 13](zotero://select/library/items/29J8M6GG)) ([pdf](zotero://open-pdf/library/items/L9V4PYUM?page=13&annotation=5HYA9DPG))
+
+(quotes about frequency/spring:
+
+Intro: “frequency, how fast the system oscillates around its equilibrium point following a perturbation” (page 4)
+
+Methods section: “The η [spring] parameter is analogous to the stiffness or elasticity of a spring: the more the spring is stretched, the faster it returns to equilibrium. [...] A positive value of η indicates that if the system deviates from the equilibrium, it tends to accelerate further away, leading to an unstable system. In contrast, a negative η suggests that the system is self-regulating, with the magnitude of η corresponding to the frequency of oscillations around the equilibrium.” (page 9)
+
+)
+
+Note for distribution: Authors do not explicitly discuss distribution but do refer to table S2 about distribution of parameters, and there can see (via skew & kurtosis variables) that most variables normal but not all (e.g., a few variables with high kurtosis values especially). BUT this is not about distribution of variables, so answering that question with ‘no’
+
+Note: Use dynr package, very likely Bayesian estimation, but not explicitly stated?"
+An ecological momentary assessment study assessing repetitive negative thinking as a predictor for psychopathology,"Funk, J., Müller, C., Rosenkranz, T., Aas, B., Botella, C., Burkhardt, F., Fontaine, J. R. J., Frost, M., Garcia-Palacios, A., & Hoessle, C.",/,"What kind of sampling design was used?
+They use the term random, but it sound like it was semi-random to me (otherwise the intervals wouldn’t be neatly between 90 and 120 minutes) 
+
+Do the authors report the (average) time interval between ESM prompts (or ESM responses, in the case of event-based design)?
+They report a range, so I didn’t think it counted
+","Sample size: 665 included for inertia analyses (N = 1776 for the whole ESM sample)
+
+Time interval: Not clear, but authors do say: “The temporal difference between beeps within one day varied between 90 and 120 minutes.” ([Funk et al., 2025, p. 7]
+
+Sampling design: Not fully clear between random & semi-random, the authors just say: “Intervals between the beeps varied randomly in length, however, participants could select a window of hours in which they wanted to receive the beeps throughout the day. The temporal difference between beeps within one day varied between 90 and 120 minutes.” ([Funk et al., 2025, p. 7]
+
+Note for average number: ESM answer rate was 26%, but that % was likely for the whole ESM sample (N=1776) and not just the participants with enough variability to be included in the inertia analyses (N=665).","Note for average number: ESM answer rate was 26%, but that % was likely for the whole ESM sample (N=1776) and not just the participants with enough variability to be included in the inertia analyses (N=665). - said above as well"
+"The persistence of the impact of COVID-19-related distress, mood inertia, and loneliness on mental health during a postlockdown period in Germany: An ecological momentary assessment study","Haucke, M., Liu, S., & Heinzel, S.",They interpret the inertia estimates really strangely in the results section (but in the discussion it's better).,"What kind of sampling design was used?
+I honestly assume the sampling design was not actually fully random but that’s what they say so…
+","Average number of timepoints included: authors say this: “40 (<0.01%) of the total sent daily questionnaires were not answered by the participants” (page 2) but not fully clear to me what it means… (at least one question a day answered? Across all questionnaires seems unlikely say they say all participants filled in at least 28 (50%) of questionnaires…
+
+Sample size (3-level): The authors indicate in the supplementary materials that the sample possible for the 3-level model was smaller than for 2-level models (“To compare the AIC of the AR(1) models, the two-level AR(1) models were refitted to the smallest of the data, to those cases that could also be used in the three-level AR(1) model with day-level inertia.“) This implies that certain timepoints or potentially participants could not be used in the final analysis, but the authors do not specify if this impacted the final sample size or what the reduction in timepoints was like.","For topic, note authors also examine random effects for worries about COVID, perceived restrictions because of COVID, information exposure, and loneliness, as well as mood. Indicating ‘emotions’ and ‘mental health’ (for worries/loneliness), and adding Covid-related thoughts & situations
+
+‘Do the different models imply different definitions of inertia?‘ - to me no, just different way to partition the variance & account for covariances…?"
+Outcome prediction in psychological therapy with continuous time dynamic modeling of affective states and emotion regulation,"Hehlmann, M. I., Moggia, D., Schwartz, B., Driver, C. C., Eberhardt, S., & Lutz, W.",NA,"What is the exact phrase they use as definition (including if they discuss what this definition implies in the next few sentences): 
+I did not include the autocorrelation part here or in the next question because that is more of an operationalization than a definition to me. 
+
+Average time interval between ESM prompts (not counting nights): 
+They do include nights in the analyses, not sure if that should make a difference here
+
+What is the total possible range (e.g., scale min & max for the variable(s) of interest (i.e., for which they examine inertia)?  
+I assume it's 0-100 but they don't actually report how they aggregate the items so I can't be sure","Time interval: Authors themselves state the following, “Survey times were fixed for all subjects (during the week: 8:00, 12:00, 16:00, 20:00; weekends: 10:00, 14:00, 18:00, 22:00), and they were given 1 hr to respond, which resulted in different time intervals between assessments and participants.“ However, since the fixed time intervals are clearly 4 hours apart, I indicated ‘can be calculated or assumed’ with a 4 hour interval, as the interval will not be extremely far from that","AR from continuous time model - mention this in main model part as its own option ? (for now just AR)
+
+Centering - note that model includes ‘manifest intercepts’ (e.g., latent means in model); didn’t indicate that since not directly about centering raw variables
+
+Comparing multiple statistical models - indicating ‘no’ since authors do that (kinda, blocks of regression analyses compared on R squared) only after have preselected predictors of treatment outcome, and AR is not selected"
+The effect of attentional bias modification on positive affect dynamics,"Kraft, B., Bø, R., Harmer, C. J., & Landrø, N. I.","-I've been unsure about what to do with the estimation technique item for studies that just calculate the sample AC, and in this one I selected ""Other"" which I didn't do for previous papers. I think ""other"" is probably better than whatever I did before... 
+-This paper is generally super chaotic about reporting sample sizes for different measures/analyses/results","How many participants were included in the analysis? 
+They report N=65 participants are included in the regression analyses, but 26 of those have missing values for the AC. So I concluded that they only calculated the ""inertia"" for 39 of those participants
+
+Do the authors report the (average) time interval between ESM prompts (or ESM responses, in the case of event-based design)?
+They report intervals explicitly, but separately for pre- and post-treatment and for different sample sizes so not sure this is useful info for you
+
+Do the authors clearly specify the average number of ESM prompts answered per person?
+same as above 
+
+What is the MEAN/SD for the variable(s) of interest (i.e., for which they examine inertia)?  
+As in many other papers, reported for two groups separately, not ideal to aggregate based on the available info 
+
+What is the total possible range (e.g., scale min & max for the variable(s) of interest (i.e., for which they examine inertia)?  
+They say that they calculated the sum of two 0-100 items so I entered 0-200, but the mean values in Table 1 lead me to believe that maybe they took the mean of two items and not the sum 
+
+Do the authors model within-person change in inertia?
+They kind of model change in inertia before and after the treatment, but this seems to be just on a group-level so I didn't count this as modeling within-person change","Sample size - putting 65 based on Figure 2, which reflects the number of participants (in the two conditions of the experimental task) taking into account exclusions
+
+Time interval between ESM prompts: Authors report this for pre and post experimental task separately (179 vs 176 min) - I took the average of these two (177.5) and converted it to hours = 2.96
+
+Average number of answered prompts - authors give this for pre & post periods, so adding those (35 & 37) together to get 72
+
+For mean & SD: getting weighted average based on # of participants, since give mean & SD based on condition. 
+
+SD: Taking from mean next to SD (assume this is between-person mean; the SD row is the within-person mean, as described in the ‘affective dynamic indices’ section)",NA
+The Link Between Delayed Affective Recovery From Daily Stressors and Anxiety Symptoms in Youth.,"Lachowicz, A. M., Vaessen, T., Lafit, G., Achterhof, R., Akcaoglu, Z., Bamps, E., Hagemann, N., Hiekkaranta, A. P., Hermans, K. S. F. M., & Janssens, J. J.",NA,"What is the SD for the variable(s) of interest (i.e., for which they examine inertia)?
+They report the SD of the person-level means, not the SD of the actual measurements 
+
+Is a working link to the registration provided?
+Yes, however the registration is not actually an OSF registration, it is just a file named registration in the OSF project. The file info also says that it was edited recently, so not a great “registration” but I’ve counted it as one
+
+Is the within-person reliability of this scale discussed (empirically) for this specific sample?
+The within-person reliability is discussed for two of the quadrant scores, but not the final valence/arousal scores. 
+","Authors also sometimes use term ‘delayed affective recovery’ but ‘affective recovery’ applies more generally
+
+Compliance: Two average values for compliance, one each for the two samples used for analyses (e.g., one main sample, the other a subsample that also answered wave 2). Note that the relevant number of data points for analyses was not necessarily the average number of answered prompts but more specifically the average number of stressors per person (used as the start to recovery; and not all stressors could be used in analyses, e.g., if no initial reactivity to stressor (page 155). These average numbers are in Table 1: 1.96 for the large sample, 1.12 for the subsample. 
+
+Note for careless responding: Authors do not remove datapoints because of anything to do with careless responding/time to respond etc, but do remove in preprocessing if don’t have all the information they require for analyses (e.g., initial reactivity). Not counting this for ‘careless responding’ however)","Added to definition: “Methods: ""we applied survival analysis to operationalize and analyze affective recovery from daily stressors."" (But it does feel weird!!) For now, not checking for definition components…; and not checking ‘statistical definition’ (come back after decide on major strategy!!)
+
+What within-person change is linked with - they include a binary variable for ‘cumulative stress’ which is assessed via if a stressor occurred after the first stressor occurrence in the day (the first being the focal point for survival analysis). Indicating this as ‘external context (e.g., specific events)’, but note that it is indicate by participants via these 3 items: “I would rather do something else,” “This is difficult for me,” and “I can do this well” (averaged, and recreated in a binary)
+
+Individual differences: Adding option for ‘not clear’ about multilevel model, since the authors state : “four Weibull regression models for time-interval censored data with an adjusted covariance matrix to account for the multilevel structure of the data with intervals nested within participants” (page 155). This could mean a multilevel model but could also mean a different way to handle multilevel data
+
+Within-person reliability - talks about Cronbach’s alpha but does mention for within-person and between-person so …? (Also though, this is for the quadrant scores that have multiple items - Q3 & 4, and not the actual arousal & valence scores…)"
+Higher emotion regulation flexibility predicts more stable negative emotions and faster affective recovery in early psychosis: An experience sampling study,"Li, X., Vaessen, T., Lafit, G., van Aubel, E., Hiekkaranta, A. P., Houben, M., Beijer-Klippel, A., de Haan, L., Schirmbeck, F., Reininghaus, U., & Myin-Germeys, I.",NA,"Do the authors report the (average) time interval between ESM prompts (or ESM responses, in the case of event-based design)?
+As they report 90 minute semi-random blocks, I would assume that the average interval should be around 90 minutes but it's probably not exact
+
+What is the SD for the variable(s) of interest (i.e., for which they examine inertia)?  
+I entered the mean NA variability which is the mean of the SD of NA across the 10 beeps in a day
+
+What is the model type? (Check all that apply):
+I did not include the survival analysis here because they do not see this as part of the ""inertia"" but I'm not sure if this is what you'd want + for previous articles i didn't include models in which inertia estimates were used as a predictor in a regression in a second step, but in this case the second step models the within-person associations with inertia so I thought this was relevant here 
+
+If yes, with which method? 
+They call it the omega coefficient so I did choose the reflective models option, but they do not actually explicitly say which method they used and did not provide references. 
+","Construct: The authors do examine inertia, but they also simultaneously examine ‘affective recovery’ (which would count as a parallel construct to inertia according to our working definition in our inclusion criteria). 
+
+As the form only fits one construct, I will indicate the further information about affective recovery here: 
+Definition: “Additionally, affective recovery, which refers to the degree to which affect returns to baseline after stress, also characterizes the temporal dynamics of emotions and is assumed to be dependent on the effectiveness of ER.” (page 2064)
+
+Operationalization: “Recovery was defined as the median time took for NA to be equal to or lower than the mean NA following the first stressor of the day.”
+
+(This is all also relevant for the question : ‘Do the authors explicitly discuss in the text how they operationalize the recovery portion of inertia ? ‘ In this case, they do not connect the concept of inertia to recovery, but they do go into detail about how they operationalization recovery)
+
+---
+
+Note for SD of variable (NA): Authors report between & within SD, indicating between
+
+Whether results provide evidence for ‘within-person change in inertia’ : indicated ‘yes’ since authors give the within-person SD (.27) and an ICC of .22, both suggesting substantial within-person variation from day-to-day in inertia values","Indicated ‘within-person change’ as the authors indicate all emotional dynamics were calculated per day, and specifically say for inertia: “daily NA inertia was calculated as the auto-regressive effect within days, i.e. NA at beep t was regressed onto NA at beep t-1.” They also give the within-person SD and ICC for inertia, which again supports that it was actually calculated per day per person
+
+How authors model within-person change: here, have a multilevel model where daily NA inertia is the outcome, and daily ER flexibility is the predictor (according to page 2065). I’m counting this as a model with a moderator in two steps, because it’s examining if daily ER flexibility predicts daily affective inertia (so not directly a moderator but implies the same, no?)
+
+Moderator variable from 0 to 1, technically not continuous…
+
+Distribution of within-person ‘moderator’ - authors don’t say it’s normal or skewed etc but do give Mean, SD (within & between), range, etc - not counting bc didn’t count for inertia variables in scoping review so far…
+
+Individual differences - not multilevel for inertia BUT do RQ focus on group-level or on individuals ? (To me - counts as group-level, esp since the overall aim is to ‘investigate the effectiveness of ER strategy use in early psychosis’)"
+Bouncing back from emotional ups and downs: Insights in emotional recovery using survival analyses of burst ESM data,"Schreuder, M. J., Ariens, S., Lafit, G., & Ceulemans, E.",NA,"Do the authors use the term inertia?
+They refer to the concept of inertia in the intro/discussion, but it is not the main term they use for the concept they're investigating so I said No here 
+
+Do the authors specify if this number was reduced because they removed data points due to careless responding or poor data quality?
+They did remove a whole participant due to possible careless responding but not individual data points (or at least this is not reported)
+
+Was the study registered before data analysis?
+Marieke did access data of some participants to write the preregistration but not all, so I chose post-registration
+
+Do the authors report that the code used to produce the results is publicly available?
+They do not mention this in the paper so I chose No but I do think the code is available on OSF
+
+Was this moderator investigated
+I chose ""in a second analysis step"" because the calculation of the return times used in the Cox hazard models is the first step to me, but I'm not sure about this 
+
+Is this moderator variable:
+If you want to count both DR and valence of the episode as moderators, they are two different types of variables so I tried to solve it by choosing other and writing in both binary and continuous 
+
+What type of statistical model or method did the authors use to examine within-person change (without a moderator)? 
+Not sure if this question is supposed to be here, I indicated there is a moderator","Authors use term ‘inertia’ (about AR) but not in reference to their own parallel construct. 
+
+Note for Mean & SD of mood: reported in supp materials, and both are within-person (not between)
+
+Preregistration: Indicating ‘after data collection but before data access (post-registration’ since it states on the prereg: “Prior to submitting this preregistration, Marieke Schreuder, who will perform the data analyses, had access to data from 10 randomly selected individuals. The complete data will be accessed after publishing this preregistration.“
+
+Code availability: Although the code is available on OSF (https://osf.io/afhkp/files/c6ahy), this is not mentioned by the authors in the manuscript, so indicating ‘no’ to the question ‘Do the authors report that the code used to produce the results is publicly available?‘","Definition -  not sure whether to include this as part of definition (already have one sentence), as this is more about possible operationalizations than definitions…: “measuring emotional recovery directly from ESM data, which can be done by modelling the effect of prior stressful events on current emotion levels (Ader et al., 2022; Drake et al., 2022; Kuranova et al., 2020; Vaessen et al., 2019) or by using survival analysis (De Calheiros Velozo et al., 2023; Lachowicz et al., 2023; Li et al., 2024; Verduyn et al., 2009), which concerns the focus of the current manuscript.” (page 911). For now, not including it
+
+Question on what to put for number of beeps per day (right now: “minimum 8”; should I try to indicate burst beeps - 4 per burst - somehow as well?
+
+Question for average number of ESM prompts: Scheduled beep compliance is 76.195, which gives 127.68 beeps; compliance of burst beeps is 60.43%, and we know average of 18.06 episodes per person, so presumably can assume 43 beeps per burst on average answered per person ??
+
+Questions about within-person change: Does this count as with a moderator ? To me yes, look at day-level resilience. (and I indicated ‘internal context’ as the type of variable within-person change is linked with). 
+
+'Do they clearly indicate the inertia estimate(s)?' - I put no, & from what I understand results mainly are interpreted via whether certain episodes last longer than others, or how likely recovery is. This is reported in text, but to me less relevant ? (Also this Q is optional anyways, for later project about inertia…)"
+Critical Slowing Down in Momentary Affect as Early Warning Signal of Impending Transitions in Depression,"Smit, A. C., Helmich, M. A., Bringmann, L. F., Oldehinkel, A. J., Wichers, M., & Snippe, E.",NA,"Do the authors clearly specify the average number of ESM prompts answered per person?
+They report the median, which is not the average but it feels wrong to say that they didn’t report this… 
+
+What is the MEAN/SD for the variable(s) of interest (i.e., for which they examine inertia)?
+We could calculate this based on available information in the supplementary materials but it would not be an exact number because we don’t have the necessary information to weight the transition/no-transition groups accordingly because not everyone had the exact same number of total possible measurements 
+
+Do results suggest that this within-person change is linked with a moderator ?
+The clinical transition is not really a “moderator” here model wise, so I didn’t indicate this, but if this question is more about “is within-person change linked with something” then the link with the presence of a clinical transition may be interesting information for you? 
+
+What is the model type? (Check all that apply):
+The “inertia” itself is estimated based on an AR model (I mean, they just calculated the lag-1 autocorrelation but close enough I guess?), I’m not sure if you would want additional modeling information about the other steps in the analysis, or how to describe those model-wise 
+","For constructs: RQ is broad (affective states), so indicating all they look at ; but main one is low NA","Hmm… I think for here if I indicate ‘autocorrelation’ as the concept, the definitions I put are not actually linked with AC but more interpretations about what rising AC might mean - I think do not count as an actual definition, so just ticking ‘statistical definition’ and for the component: ‘autocorrelation’
+
+Definition for context: ‘Note: No definition specifically of 'autocorrelation' but includes the following info on how they interpret 'rising autocorrelation'
+
+In intro: [Background:] ""An attractive within-persons risk marker for transitions in dynamical systems is critical slowing down (CSD; Strogatz, 2018; Wissel, 1984). CSD occurs when a system gradually becomes slower in recovering from perturbations, which signals a process of destabilization that leads to an increasing risk that even small perturbations may eventually result in large, potentially detrimental transitions"" (page 760-761)
+
+“CSD is also empirically measurable because it leads to increases in the autocorrelation and variance of components of a wide range of dynamical systems. These so-called early warning signals (EWSs) have been shown to anticipate upcoming transitions in a wide range of empirical time series, such as ecology, climate change, geology, neurology, microbiology, chemistry, physics, and engineering.” (page 761)‘
+
+"
+Discovering different profiles in the dynamics of depression based on real–time monitoring of mood: A first exploration,"Van Genugten, C. R., Schuurmans, J., Van Ballegooijen, W., Hoogendoorn, A. W., Smit, J. H., & Riper, H.","I'm not entirely sure if simply calculating the autocorrelation fits within what you mean by an ""autoregressive model"", but I've been doing it that way for the previous papers so I'm simply sticking with it now.","What is the MEAN/SD for the variable(s) of interest (i.e., for which they examine inertia)?  
+Again, only means/sds for subgroups are reported and I'm not sure it's a good idea to start aggregating based on the available information","Distribution - authors report they checked the distribution of the demographic & clinical characteristics, but not for the ESM variables
+
+Conceptualization notes for inertia: Authors discuss in methods section how “there are no official cutoff values to specify variability or emotional inertia to be considered high, moderate or low.” (page 3) What’s also interesting though is that they state: “A larger negative correlation equals lower emotional inertia (Houben et al., 2015; Vansteelandt and Verbeke, 2016).” (page 3), which I don’t agree with - it states a completely different pattern instead, not less speed of change in mood (as they refer to inertia higher up). This maybe is why they discuss that the AC value of .19 for their Profile 1 (slightly more pos mood) indicates “slower mood shifts” (page 4), and that this is a similar result for profile 2 (.26). There is no specific test about this difference, just the conclusion that they’re similar “slower mood shifts”","Definition component: In methods, authors say about inertia: “With time-series data, this is mathematically defined as the autocorrelation (AC) (Ruwaard et al., 2018)."" (page 3). Decide whether to include as definition component based on decision about rest of articles… (here, specifically about AC defined in methods)
+
+For how authors handle individual differences, I put ‘model each individual and then cluster’ - makes sense for a profile analysis ??
+
+Comparing statistical models - putting ‘no’ as it’s not related to how to examine inertia"
+How much we express love predicts how much we feel loved in daily life,"Williams, L., Kim, S. H., Li, Y., Heshmati, S., Vandekerckhove, J., Roeser, R. W., & Oravecz, Z.",NA,"Number of measurements per day per participant:
+They say maximum 6, so I'm not sure if just saying 6 is okay
+
+What is the model type? (Check all that apply):
+This is essentially a CT VAR model but I'm not sure if you include CT versions in your definition of ""autoregressive"" models",Continuous-time (with interpretation; very strong inertia value at 4 hours for felt love),Definition component: keep ‘regulation back to baseline’ as its own definition component ? Or just let it be subsumed under ‘Slower recovery / return to baseline’ (the new part is the ‘regulation’ part…)
+Dynamics of Parental Criticism and Emerging Adult Emotional Functioning: Associations With Depression,"Zhu, J. Y., Simons, J. S., & Goldstein, A. L.","In the methods section (Measures>Daily Affect), they report using a ""visual analogue scale later converted to a 5-point scale"". In Table 2, it is reported that the range for the emotion items is 0-10. I assume the explanation in the methods section is simply wrong/incomplete...",NA,"Sampling design - indicated ‘unclear’ since from the info the authors put, could indicate either fixed or (semi-)random, but assuming fixed. Info given: “…with participants completing the 5–7 min survey between 8:00 and 10:00 p.m.“ (page 1453)
+
+Response scales: Authors answer items via a VAS scale (so indicating that), but this later gets converted to a 5 point scale via preprocessing; the authors state: ““All variables except sex were rescaled by a factor of five due to large variance and to assist model convergence” (page 1455)
+
+Total possible range: Authors only state they convert the VAS scale to a 5-point one, but not what the min & max are…
+
+Note: There is no discussion in the analysis section of depression (a between-subject variable) moderating or interaction with any of the within-person parameters (particularly AR), nor any visible link of such type in the model figure. However, from how authors discuss the results, it seems like the model did have some type of interaction (e.g., ““Inconsistent with previous research, depression did not significantly predict inertia in sadness or other negative emotions” (page 1455).",NA
+Differential impact of preventive cognitive therapy while tapering antidepressants versus maintenance antidepressant treatment on affect fluctuations and individual affect networks and impact on relapse: A secondary analysis of a randomised controlled trial.,"van der Wal, J. M., van Borkulo, C. D., Haslbeck, J. M. B., Slofstra, C., Klein, N. S., Blanken, T. F., Deserno, M. K., Lok, A., Nauta, M. H., & Bockting, C. L.",NA,"How many participants were included in the analysis? 
+They say 42 patients and 11 HCs (page 6), but only seem to discuss the results from the 42 patients
+
+Which response scale(s) was/were used in the ESM questionnaire?
+""scored from 0 to 100"" indicates to me that it is a VAS scale but they don't explicitly say that
+
+What is the MEAN/SD for the variable(s) of interest (i.e., for which they examine inertia)? 
+They do report the mean/sd per group per week, but i don't think it would be entirely correct to just take the mean of all the weeks if i can't weight that by compliance
+
+Do the authors model within-person change in inertia? + follow-up questions 
+They do use a time-varying VAR model that models within-person change in inertia in 7 emotions so I answered the questions as such, but they don't actually interpret that and even say in the discussion that future studies should examine changes in inertia over time
+","For construct, including all individual items as the authors state they examine AC of aggregated NA & PA as well as all individual items
+
+Sample size: 42 participants in the various clinical groups, and 11 healthy control - but analyses in this manuscript (with AC) seem to only focus on clinical groups, so putting 42 as participants included in analyses
+
+ESM study duration: Indicating 24 days of active ESM; note however that the whole period of the ESM study was 8 weeks
+
+Distribution: Authors indicate they examine normality but seems just for affect network structure values (“We used these values [index of average change in network structure] to explore if change over time in affect network structure differed between treatment groups or between participants who relapsed versus those who remained in remission, using an ANOVA or Kruskal–Wallis test (when a Shapiro–Wilks test indicated violation of normality).” (page 5)
+
+Note: The data extraction focuses on what the authors term ‘inertia’ and discuss in their introduction as such, namely autocorrelation. They do also examine autoregression in their network models, which are time-varying (so allowing within-person change), but the authors never associate this with the concept of inertia or even specifically discuss the results of any autoregressive parameters from these models; as such, not including these in this extraction.",NA

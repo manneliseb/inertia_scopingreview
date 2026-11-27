@@ -1,0 +1,44 @@
+variable,n_categories,agreement,kappa,kappa_max,permutation_p,category_frequencies,absent,present,n_articles
+Definition_Type_A.conceptual.definition,2,0.93,0,0,1,Absent=0.04; Present=0.96,0.04,0.96,14
+Definition_Type_A.statistical.definition,2,0.79,0.59,0.59,0.03,Absent=0.46; Present=0.54,0.46,0.54,14
+Definition_Components_X.Sticky..or.stuck,2,1,1,1,0.07,Absent=0.93; Present=0.07,0.93,0.07,14
+Definition_Components_Across.contexts.or.spillover,2,0.86,0.44,0.44,0.22,Absent=0.86; Present=0.14,0.86,0.14,14
+Definition_Components_Autocorrelations.autoregressive.model,2,0.86,0.71,0.71,0.01,Absent=0.57; Present=0.43,0.57,0.43,14
+Definition_Components_Other,2,0.64,0.34,0.34,0.15,Absent=0.39; Present=0.61,0.39,0.61,14
+Definition_Components_Persisting.or.tendency.to.remain.in.same.state,2,0.71,0.15,1,0.55,Absent=0.79; Present=0.21,0.79,0.21,14
+Definition_Components_Self.predicting,2,0.93,0.76,0.76,0.03,Absent=0.82; Present=0.18,0.82,0.18,14
+Definition_Components_Slower.recovery...return.to.baseline,2,0.71,0.43,0.71,0.13,Absent=0.57; Present=0.43,0.57,0.43,14
+Definition_Components_Trait...person.level.characteristic,2,0.86,0,0,1,Absent=0.93; Present=0.07,0.93,0.07,14
+OperationalizeRecovery_How_Conceptually,1,1,NA,NA,NA,Present=1,1,NA,4
+OperationalizeRecovery_How_Statistically..e.g...discuss.speed.of.return.or.specific.statistical.terms.such.as.mean.,2,0.75,0,0,1,Absent=0.12; Present=0.88,0.12,0.88,4
+StudyTopic_Emotions,2,0.93,0.63,0.63,0.14,Absent=0.11; Present=0.89,0.11,0.89,14
+StudyTopic_Family.relationships,2,0.93,0,0,1,Absent=0.96; Present=0.04,0.96,0.04,14
+StudyTopic_General.social.relationships.interactions,2,0.93,0,0,1,Absent=0.96; Present=0.04,0.96,0.04,14
+StudyTopic_Mental.health,2,0.64,0.22,0.53,0.38,Absent=0.32; Present=0.68,0.32,0.68,14
+StudyTopic_Other,2,0.64,0,0,1,Absent=0.82; Present=0.18,0.82,0.18,14
+StudyTopic_Physical.health.and.health.behaviour,2,1,1,1,0.07,Absent=0.93; Present=0.07,0.93,0.07,14
+StudyTopic_Situations.places,2,0.86,0,0,1,Absent=0.93; Present=0.07,0.93,0.07,14
+StudyTopic_Work.employment,2,0.93,0,0,1,Absent=0.96; Present=0.04,0.96,0.04,14
+SamplingDesign_Type_Fixed.sampling.design,2,1,1,1,0,Absent=0.64; Present=0.36,0.64,0.36,11
+SamplingDesign_Type_Other,2,1,1,1,0.09,Absent=0.91; Present=0.09,0.91,0.09,11
+SamplingDesign_Type_Random.sampling.design,2,1,1,1,0,Absent=0.55; Present=0.45,0.55,0.45,11
+SamplingDesign_Type_Semi.random.sampling.design,2,1,1,1,0.02,Absent=0.82; Present=0.18,0.82,0.18,11
+WithinPersonChange_Correlate_Clinical.treatment,1,1,NA,NA,NA,Absent=1,1,NA,3
+WithinPersonChange_Correlate_External.context..e.g...specific.events.,1,1,NA,NA,NA,Absent=1,1,NA,3
+WithinPersonChange_Correlate_Internal.context..e.g...thoughts..rumination..deep.breathing.,1,1,NA,NA,NA,Present=1,1,NA,3
+WithinPersonChange_Correlate_Nothing..e.g...using.a.model.without.a.moderator.and.not.linking.results.to.other.factors.,1,1,NA,NA,NA,Absent=1,1,NA,3
+WithinPersonChange_Correlate_Other,2,0.67,0,0,1,Absent=0.83; Present=0.17,0.83,0.17,3
+WithinPersonChange_Moderator_Type_Binary,2,0.5,0,0,1,Absent=0.75; Present=0.25,0.75,0.25,2
+WithinPersonChange_Moderator_Type_Continuous,1,1,NA,NA,NA,Present=1,1,NA,2
+WithinPersonChange_StatisticalModel_Other,1,1,NA,NA,NA,Present=1,1,NA,2
+WithinPersonChange_StatisticalModel_Time.varying.autoregressive.model,1,1,NA,NA,NA,Absent=1,1,NA,2
+StatisticalModelFamily_Autoregressive.model,2,0.71,0.43,0.43,0.1,Absent=0.36; Present=0.64,0.36,0.64,14
+StatisticalModelFamily_Model.with.autoregressive.term.but.also.other.main.parameters..e.g...ARX.,2,0.79,0,0,1,Absent=0.89; Present=0.11,0.89,0.11,14
+StatisticalModelFamily_Other,2,0.79,0.32,0.32,0.29,Absent=0.82; Present=0.18,0.82,0.18,14
+StatisticalModelFamily_Survival.analysis,2,1,1,1,0.01,Absent=0.86; Present=0.14,0.86,0.14,14
+IndividualDifferencesHandled_Do.not.specify,2,0.93,0,0,1,Absent=0.96; Present=0.04,0.96,0.04,14
+IndividualDifferencesHandled_Model.each.individual.and.then.cluster,2,0.64,0.19,0.19,0.43,Absent=0.75; Present=0.25,0.75,0.25,14
+IndividualDifferencesHandled_Multilevel.model,2,0.86,0.72,0.72,0.01,Absent=0.5; Present=0.5,0.5,0.5,14
+IndividualDifferencesHandled_Nothing..although.research.questions.focused.on.group.level.,2,0.71,0,0,1,Absent=0.86; Present=0.14,0.86,0.14,14
+IndividualDifferencesHandled_Other,2,0.86,-0.08,1,1,Absent=0.93; Present=0.07,0.93,0.07,14
+IndividualDifferencesHandled_Single.case.analysis..research.questions.focused.on.individuals,2,1,1,1,0.07,Absent=0.93; Present=0.07,0.93,0.07,14

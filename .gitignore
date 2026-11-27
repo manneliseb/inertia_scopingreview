@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Ignore
+scripts/old
+figures/old
+figures/explanatory
+data/old versions
+data/raw
+data/processed/other
+data/processed/alldata

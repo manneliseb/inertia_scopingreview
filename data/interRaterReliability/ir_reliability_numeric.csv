@@ -1,0 +1,6 @@
+variable,ICC,agreement,exact_agreement,na_agreement,n_articles,effective_articles
+NParticipants,0.9997,0.83,0.83,0.86,12,12
+AverageTimeInterval_Hours,1,1,1,0.93,4,4
+StudyDuration_Days,1,1,1,1,14,14
+ESMPrompts_perDay,1,1,1,1,14,14
+AverageNAnsweredESM,1,1,1,0.71,8,8
