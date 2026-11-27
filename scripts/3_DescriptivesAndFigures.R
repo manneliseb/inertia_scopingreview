@@ -1619,7 +1619,7 @@ defcomp_cooc <- ggplot() +
   ) +
   scale_color_manual(
     values = cols_component,
-    limits = component_cat_levels,
+    limits = levels(components_all$component_cat),
     drop = FALSE,
     name = "Component category"
   ) +
