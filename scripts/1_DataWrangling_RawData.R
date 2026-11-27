@@ -989,8 +989,18 @@ ScopingReview_toShare <- ScopingReview %>%
       Inertia_Correlate_Which,
       Uncertainties
     )
+  ) %>%
+  # To get data easily readable by Airtable (select multiple fields etc)
+  mutate(
+    across(
+      where(~ is.character(.x) || is.factor(.x)),
+      ~ stringr::str_replace_all(as.character(.x), fixed(";"), ",")
+    ),
+    StatisticalModelFamily = StatisticalModelFamily |>
+      replace_values(
+        "AR model with other main parameter (e.g., ARX)" ~ "AR model with other main parameter (e.g. ARX)",
+      )
   )
-
 
 ScopingReview_forR <- ScopingReview_forR %>%
   select(
