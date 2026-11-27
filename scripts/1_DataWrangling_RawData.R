@@ -958,7 +958,8 @@ ScopingReview_toShare <- ScopingReview %>%
     -c(
       Definition_Components,
       Definition_Components_other,
-      #     OperationalizeRecovery_How,
+      Definition_Type,
+      Definition_NewInfoAppears,
       Distribution_Discussed,
       Distribution_Exact,
       variable_Mean,
@@ -998,7 +999,6 @@ ScopingReview_forR <- ScopingReview_forR %>%
       Definition_Components,
       Definition_Components_other,
       Constructs,
-      # OperationalizeRecovery_How,
       OperationalizeRecovery_How_ExactPhrase,
       Distribution_Discussed,
       Distribution_Exact,
