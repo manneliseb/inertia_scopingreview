@@ -4,3 +4,5 @@ Supplementary materials for: “Lingering over time: How do authors define and m
 R code, shared data, and figures for a scoping review of methods and analysis practices for researching (emotional) inertia
 
 Further info on the project (including Stage 1 registered report and supplementary materials) can be found here: https://osf.io/uaw4n/
+
+The data can also be found in a filterable & manipulable database form at: https://airtable.com/app6PmVWDE4jaWzlO/shrqrfFIjpNdAwo6l
